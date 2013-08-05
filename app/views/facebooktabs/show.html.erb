@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @facebooktab.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @facebooktab.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @facebooktab.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_facebooktab_path(@facebooktab) %> |
+<%= link_to 'Back', facebooktabs_path %>

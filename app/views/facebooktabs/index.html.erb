@@ -1,0 +1,27 @@
+<h1>Listing facebooktabs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @facebooktabs.each do |facebooktab| %>
+  <tr>
+    <td><%= facebooktab.name %></td>
+    <td><%= facebooktab.title %></td>
+    <td><%= facebooktab.content %></td>
+    <td><%= link_to 'Show', facebooktab %></td>
+    <td><%= link_to 'Edit', edit_facebooktab_path(facebooktab) %></td>
+    <td><%= link_to 'Destroy', facebooktab, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Facebooktab', new_facebooktab_path %>
